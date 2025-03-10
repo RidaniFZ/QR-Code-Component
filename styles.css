@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px); /* Adjust height to account for footer */
+}
+.card {
+    background-color:hsl(212, 45%, 89%);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Changed to column for better layout */
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 50%;
+    position:absolute;
+    z-index: 1;
+}
+.qr-card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 150px;
+    margin: auto; /* Centers the qr-card horizontally */
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.qr-text {
+    font-size: 10px;
+    color: hsl(216, 15%, 48%)
+}
+
+h1 {
+    font-size: 13px;
+    color: #333;
+    font-weight: bold;
+}
+
+.attribution { 
+    font-size: 10px; 
+    text-align: center;
+ }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: 50px; /* Fixed height for footer */
+    position: fixed; /* Optional: Keep footer at the bottom */
+    bottom: 0;
+    width: 100%;
+}
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+    .card {
+        width: 80%; /* Takes up more space on smaller screens */
+        height: 60%; /* Adjusts height for smaller screens */
+    }
+}
